@@ -1,0 +1,44 @@
+
+body {
+  background: #f8f9fa;
+  font-family: Arial, sans-serif;
+}
+
+.product-card img {
+  height: 300px;
+  object-fit: cover;
+}
+
+.card {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+
+
+.welcome-container {
+  position: fixed;
+  inset: 0;
+  height: 100vh;
+  background: url("../img/background.png") center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55); 
+}
+
+.welcome-content {
+  position: relative;
+  z-index: 10;
+}
+
+.welcome-content h1,
+.welcome-content p {
+  text-shadow: 0 2px 10px rgba(0,0,0,0.7);
+}
+
